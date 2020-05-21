@@ -1,0 +1,19 @@
+.output {
+  width: 25px;
+}
+
+form {
+  margin: 50px;
+}
+
+div.content {
+  padding-top: 20px;
+}
+
+.boxColor {
+  padding: 50px;
+  width: 50px;
+  height: 50px;
+  margin-left: 40px;
+  border: 2px solid;
+}

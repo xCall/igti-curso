@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <form>
+    <div class="content">
+      <label for="r">(R) Vermelho:</label>
+      <input type="range" id="red" name="r" step="1" value="0" min="0" max="255">
+      <input type="number" id="redOutput" class="output" disabled>
+    </div>
+    <div class="content">
+      <label for="g">(G) Verde:</label>
+      <input type="range" id="green" name="g" step="1" value="0" min="0" max="255">
+      <input type="number" id="greenOutput" class="output" disabled>
+    </div>
+    <div class="content">
+      <label for="b">(B) Azul:</label>
+      <input type="range" id="blue" name="b" step="1" value="0" min="0" max="255">
+      <input type="number" id="blueOutput" class="output" disabled>
+    </div>
+  </form>
+
+  <div class="boxColor"></div>
+
+  <script src="./js/script.js"></script>
+  
+</body>
+
+</html>
