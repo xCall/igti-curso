@@ -1,13 +1,12 @@
-window.addEventListener('load', start)
+let globalNames = ['teste', 'teste']
 
-var globalNames = ['teste', 'teste']
+let inputName = null
+let currentIndex = null
 
-var inputName = null
-var currentIndex = null
+let isEditing = false
 
-var isEditing = false
 
-function start() {
+window.addEventListener('load', () => {
 
   inputName = document.querySelector('#inputName')
 
@@ -15,20 +14,22 @@ function start() {
   activateInput()
   render()
 
-}
+})
 
 function activateInput() {
 
   function insertName(newName) {
 
-    globalNames.push(newName)
+    //globalNames.push(newName)
+
+    globalNames = [...globalNames, newName]
 
   }
 
   function updateName(editName) {
 
     globalNames[currentIndex] = editName
-    
+
   }
 
   function handleTyping(event) {
