@@ -1,0 +1,14 @@
+.center-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.box {
+	border: 2px solid grey;
+	border-radius: 6px;
+	padding: 50px;
+	height: 100vh;
+	margin-top: 50px;
+}
+
