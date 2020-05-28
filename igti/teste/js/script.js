@@ -5,6 +5,7 @@ let somAges = 0
 let middleAges = 0
 
 let countPeople = 0
+let i = 0
 
 let allPeople = []
 let resultPeople = []
@@ -22,12 +23,14 @@ window.addEventListener('load', () => {
 
 	resultSearch = document.querySelector('#resultSearch')
 	resultSum = document.querySelector('#resultSum')
-	inputDataSearch = document.querySelector('#inputDataSearch').value
+	inputDataSearch = document.querySelector('#inputDataSearch')
 	btnSearch = document.querySelector('#btnSearch')
 
 	fetchPeoples()
+	searchData()
 
-	console.log(inputDataSearch)
+
+	//console.log(inputDataSearch)
 	//initSearch(inputDataSearch)
 
 })
@@ -62,12 +65,12 @@ async function fetchPeoples() {
 
 	render()
 
-	console.log(json)
+	console.log()
 }
 
 function render() {
 
-	renderSumary()
+	//renderSumary()
 	renderListPeoples()
 
 }
@@ -124,6 +127,38 @@ function renderListPeoples() {
 	peopleHTML += '</div>'
 
 	resultSearch.innerHTML = peopleHTML
+
+}
+
+function searchData() {
+
+	const inputValueData = document.querySelector('#inputDataSearch').addEventListener('Keyup', e => {
+
+			console.log(inputValueData.value = 'text')
+
+	})
+
+
+		inputDataSearch.addEventListener('keyup', event => {
+
+			/*const result = allPeople.results.filter(person => {
+
+				if(person.name.first === inputValueData || person.name.last === inputValueData) {
+
+					const  res = [...result, ...allPeople]
+
+				}
+
+				return console.log(res)
+
+			})*/
+
+
+			console.log(inputValueData)
+
+		})
+
+		console.log(inputValueData)
 
 }
 
